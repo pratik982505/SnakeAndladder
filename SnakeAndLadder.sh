@@ -1,9 +1,18 @@
 #!/bin/bash -x
-#set pos 0
-startpos=0
-player1pos=0
+#set  all pos
+start () {
+echo "Welcome to Snake and Ladder game" 
+StartPos=0
+Players=1
+}
+start
 
-#Roll a dic
+
+#Roll a die
+
+rolldice () {
 echo "Rolls a die"
-dienumber=$(( $RANDOM%6+1 ))
-echo "$dienumber"
+dieNumber=$((RANDOM%6+1))
+echo "$dieNumber"
+}
+rolldice
